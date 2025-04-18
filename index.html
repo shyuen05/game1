@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Static Coast</title>
+  <style>
+    body {
+      font-family: 'Courier New', monospace;
+      background: #0a0a0a;
+      color: #e0e0e0;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    button {
+      background: #222;
+      color: #fff;
+      border: 1px solid #444;
+      padding: 8px 12px;
+      margin: 5px 0;
+      cursor: pointer;
+      font-family: inherit;
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+    button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+    #inventory, #item-actions {
+      margin-top: 20px;
+      padding-top: 10px;
+      border-top: 1px dashed #333;
+    }
+    .item-active {
+      color: #ff9;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Static Coast</h1>
+  <div id="description"></div>
+  <div id="choices"></div>
+  <div id="inventory"></div>
+  <div id="item-actions"></div>
+  <script src="game.js"></script>
+</body>
+</html>
